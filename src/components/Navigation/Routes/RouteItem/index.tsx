@@ -16,7 +16,7 @@ export const RouteItem = ({
   route,
   nested = false,
   hasChildren = false,
-  handleMenuClick = () => {},
+  handleMenuClick = () => { },
 }: RouteItemProps) => {
   const location = useLocation();
 
@@ -70,6 +70,6 @@ const StyledIconButton = styled(IconButton)<{ isSelected: boolean }>(({ isSelect
   transition: 'box-shadow 0.1s',
 }));
 
-const StyledIcon = styled(Icon)<{ isSelected: boolean; component: ComponentType<{}> }>`
+const StyledIcon = styled(Icon) <{ isSelected: boolean; component: ComponentType<{}> }>`
   ${({ isSelected, theme }) => isSelected && `color: ${theme.palette.primary.main};`}
 `;

@@ -7,7 +7,7 @@ import logo from '../logo.svg';
 import { AppContext } from '../contexts';
 import { APP_TITLE, PAGE_TITLE_HOME } from '../utils/constants';
 
-export const Home = () => {
+const Home = () => {
   const context = useContext(AppContext);
 
   return (
@@ -45,3 +45,5 @@ const StyledLogo = styled('img')`
     }
   }
 `;
+
+export default Home;

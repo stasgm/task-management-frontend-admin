@@ -1,9 +1,10 @@
-import { ComponentType  } from 'react';
+import { ComponentType, JSXElementConstructor } from 'react';
+import { ReactElement } from 'react';
 
 /**
  * Represents the route of a page.
  */
-export type Route = {
+export type Route  = {
   /**
    * The key of the route
    * @type {string}
